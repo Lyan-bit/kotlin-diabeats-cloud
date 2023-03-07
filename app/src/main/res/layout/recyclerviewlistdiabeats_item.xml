@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="3"
+    android:orientation="horizontal">
+
+    <TextView
+    	android:id="@+id/listDiabeatsIdView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/listDiabeatsPregnanciesView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/listDiabeatsGlucoseView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/listDiabeatsBloodPressureView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/listDiabeatsSkinThicknessView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/listDiabeatsInsulinView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/listDiabeatsBmiView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/listDiabeatsDiabetesPedigreeFunctionView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/listDiabeatsAgeView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/listDiabeatsOutcomeView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+
+</GridLayout> 
+

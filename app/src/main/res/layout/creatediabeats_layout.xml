@@ -1,0 +1,159 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context=".CreateDiabeatsFragment" >
+
+    <TableRow>
+		      <TextView
+				   android:id="@+id/createDiabeatsidLabel"
+		   		   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="Id:" />
+				
+	  <EditText
+		   android:id="@+id/createDiabeatsidField"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+		      <TextView
+				   android:id="@+id/createDiabeatspregnanciesLabel"
+		   		   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="Pregnancies:" />
+				
+	  <EditText
+		   android:id="@+id/createDiabeatspregnanciesField"
+		android:inputType="number|numberDecimal"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+		      <TextView
+				   android:id="@+id/createDiabeatsglucoseLabel"
+		   		   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="Glucose:" />
+				
+	  <EditText
+		   android:id="@+id/createDiabeatsglucoseField"
+		android:inputType="number|numberDecimal"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+		      <TextView
+				   android:id="@+id/createDiabeatsbloodPressureLabel"
+		   		   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="BloodPressure:" />
+				
+	  <EditText
+		   android:id="@+id/createDiabeatsbloodPressureField"
+		android:inputType="number|numberDecimal"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+		      <TextView
+				   android:id="@+id/createDiabeatsskinThicknessLabel"
+		   		   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="SkinThickness:" />
+				
+	  <EditText
+		   android:id="@+id/createDiabeatsskinThicknessField"
+		android:inputType="number|numberDecimal"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+		      <TextView
+				   android:id="@+id/createDiabeatsinsulinLabel"
+		   		   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="Insulin:" />
+				
+	  <EditText
+		   android:id="@+id/createDiabeatsinsulinField"
+		android:inputType="number|numberDecimal"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+		      <TextView
+				   android:id="@+id/createDiabeatsbmiLabel"
+		   		   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="Bmi:" />
+				
+	  <EditText
+		   android:id="@+id/createDiabeatsbmiField"
+		android:inputType="number|numberDecimal"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+		      <TextView
+				   android:id="@+id/createDiabeatsdiabetesPedigreeFunctionLabel"
+		   		   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="DiabetesPedigreeFunction:" />
+				
+	  <EditText
+		   android:id="@+id/createDiabeatsdiabetesPedigreeFunctionField"
+		android:inputType="number|numberDecimal"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+		      <TextView
+				   android:id="@+id/createDiabeatsageLabel"
+		   		   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="Age:" />
+				
+	  <EditText
+		   android:id="@+id/createDiabeatsageField"
+		android:inputType="number|numberDecimal"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+				      <TextView
+						   android:id="@+id/createDiabeatsoutcomeLabel"
+				   		   android:textStyle="bold"
+						   android:background="#EEFFBB"
+						   android:text="Outcome:" />
+						
+			  <TextView
+				   android:id="@+id/createDiabeatsoutcomeView"
+				   android:textStyle="bold"
+				   android:layout_span="4" />
+			</TableRow>	
+	<TableRow>
+	  <Button
+		   android:id="@+id/createDiabeatsOK"
+		   android:layout_width="wrap_content"
+		   android:layout_height="wrap_content"
+		   android:layout_column="1"
+		   android:background="#AAAAFF"
+		   android:text="OK"
+		   android:onClick="createDiabeatsOK"/>
+	  <Button
+		   android:id="@+id/createDiabeatsCancel"
+		   android:layout_width="wrap_content"
+		   android:layout_height="wrap_content"
+		   android:layout_column="3"
+		   android:background="#FFAAAA"
+		   android:text="Cancel"
+		   android:onClick="createDiabeatsCancel"/>
+	 </TableRow>		
+
+</TableLayout>
+</ScrollView>

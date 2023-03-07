@@ -1,0 +1,52 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context=".ClassifyDiabeatsFragment">
+    
+		    <TableRow>
+				 <TextView
+				             android:id="@+id/classifyDiabeatsDiabeatsLabel"
+				             android:textStyle="bold"
+				             android:background="#EEFFBB"
+				             android:text="Diabeats:" />
+				 <Spinner
+				             android:id="@+id/classifyDiabeatsDiabeatsSpinner"
+				             android:layout_width="fill_parent"
+				             android:layout_height="wrap_content"
+				             android:layout_span="4" />
+			</TableRow>
+
+	<TableRow>
+	<Button
+		android:id="@+id/classifyDiabeatsOK"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="#AAAAFF"
+		android:layout_column="1"
+		android:text="OK"
+		android:onClick="classifyDiabeatsOK" />
+	<Button
+		android:id="@+id/classifyDiabeatsCancel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="#FFAAAA"
+		android:layout_column="3"
+		android:text="Cancel"
+		android:onClick="classifyDiabeatsCancel" />
+	</TableRow>
+						    
+	<TableRow>
+	<TextView
+		android:id="@+id/classifyDiabeatsResultLabel"
+		android:textStyle="bold"
+		android:background="#EEFFBB"
+		android:text="Result:" />
+	<TextView
+		android:id="@+id/classifyDiabeatsResult"
+		android:textStyle="bold"
+		android:layout_span="4" />
+	</TableRow>
+
+</TableLayout>

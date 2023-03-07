@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "698583396283",
+    "firebase_url": "https://diabeats-8bcc9-default-rtdb.firebaseio.com",
+    "project_id": "diabeats-8bcc9",
+    "storage_bucket": "diabeats-8bcc9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698583396283:android:413501ec848a387efcde9e",
+        "android_client_info": {
+          "package_name": "com.example.diabeats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698583396283-7jme65rog8m7hr6ut422725ge7eifgqo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVP5dhre4FhcqLJ8FFeu_f0TODhXt5Ueo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698583396283-7jme65rog8m7hr6ut422725ge7eifgqo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "698583396283-v6l1t1dnri7a3hc2qu2r3d7r1oko3om4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.lyanalwakeel.diabeats"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
