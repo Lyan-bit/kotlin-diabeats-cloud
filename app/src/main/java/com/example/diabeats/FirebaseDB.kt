@@ -38,6 +38,7 @@ class FirebaseDB() {
                     locals.addAll(Diabeats.DiabeatsAllInstances)
                     for (x in locals) {
                         if (keys.contains(x.id)) {
+                            //check
                         } else {
                             Diabeats.killDiabeats(x.id)
                         }
