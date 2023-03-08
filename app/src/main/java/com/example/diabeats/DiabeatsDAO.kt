@@ -123,6 +123,7 @@ class DiabeatsDAO {
                         }
                     }
                 } catch (e: Exception) {
+                    e.printStackTrace()
                 }
             }
             return res
@@ -186,7 +187,8 @@ class DiabeatsDAO {
                 } else {
                     try {
                         result.put(jx)
-                    } catch (ee: Exception) {
+                    } catch (e: Exception) {
+                        e.printStackTrace()
                     }
                 }
             }
