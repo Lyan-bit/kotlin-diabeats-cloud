@@ -31,12 +31,6 @@ class ModelFacade private constructor(context: Context) {
         }
     }
     
-	/* This metatype code requires OclType.java, OclAttribute.java, OclOperation.java */
-	fun initialiseOclTypes() {
-			val diabeatsOclType: OclType = OclType.createByPKOclType("Diabeats")
-		diabeatsOclType.setMetatype(Diabeats::class.java)
-		    }
-    
     fun createDiabeats(x: DiabeatsVO) { 
 			 editDiabeats(x)
 	 }
