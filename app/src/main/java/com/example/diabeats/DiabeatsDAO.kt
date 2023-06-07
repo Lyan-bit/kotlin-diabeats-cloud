@@ -30,12 +30,12 @@ class DiabeatsDAO {
         }
 
         fun isCached(id: String?): Boolean {
-            Diabeats.DiabeatsIndex.get(id) ?: return false
+            Diabeats.DiabeatsIndex[id] ?: return false
             return true
         }
 
         fun getCachedInstance(id: String): Diabeats? {
-            return Diabeats.DiabeatsIndex.get(id)
+            return Diabeats.DiabeatsIndex[id]
         }
 
       fun parseCSV(line: String?): Diabeats? {
@@ -43,7 +43,7 @@ class DiabeatsDAO {
               return null
           }
           val line1vals: ArrayList<String> = Ocl.tokeniseCSV(line)
-          var diabeatsx: Diabeats? = Diabeats.DiabeatsIndex.get(line1vals[0])
+          var diabeatsx: Diabeats? = Diabeats.DiabeatsIndex[line1vals[0]]
           if (diabeatsx == null) {
               diabeatsx = Diabeats.createByPKDiabeats(line1vals[0])
           }
@@ -66,7 +66,7 @@ class DiabeatsDAO {
                 null
             } else try {
                 val id = obj.getString("id")
-                var diabeatsx: Diabeats? = Diabeats.DiabeatsIndex.get(id)
+                var diabeatsx: Diabeats? = Diabeats.DiabeatsIndex[id]
                 if (diabeatsx == null) {
                     diabeatsx = Diabeats.createByPKDiabeats(id)
                 }
@@ -94,7 +94,7 @@ class DiabeatsDAO {
           val rows: ArrayList<String> = Ocl.parseCSVtable(lines)
           for (item in rows.indices) {
               val row = rows[item]
-              if (row == null || row.trim { it <= ' ' }.length == 0) {
+              if (row == null || row.trim { it <= ' ' }.isEmpty()) {
                   //trim
               } else {
                   val x: Diabeats? = parseCSV(row)
