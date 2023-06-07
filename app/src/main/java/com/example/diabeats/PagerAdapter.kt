@@ -13,13 +13,16 @@ class PagerAdapter(private val mContext: Context, fm: FragmentManager) : Fragmen
 
     override fun getItem(position: Int): Fragment {
         // instantiate a fragment for the page.
-        if (position == 0) {
-            return CreateDiabeatsFragment.newInstance(mContext)    } 
-        else if (position == 1) {
-            return ListDiabeatsFragment.newInstance(mContext)    } 
-        else if (position == 2) {
-            return ClassifyDiabeatsFragment.newInstance(mContext)    } 
-        return CreateDiabeatsFragment.newInstance(mContext) 
+            return when (position) {
+                0 -> { 
+                    CreateDiabeatsFragment.newInstance(mContext) 
+                }            1 -> { 
+                    ListDiabeatsFragment.newInstance(mContext) 
+                }            2 -> { 
+                    ClassifyDiabeatsFragment.newInstance(mContext) 
+                }
+                else -> CreateDiabeatsFragment.newInstance(mContext) 
+             }
     }
 
     override fun getPageTitle(position: Int): CharSequence {
