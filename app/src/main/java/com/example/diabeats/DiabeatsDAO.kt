@@ -14,7 +14,7 @@ class DiabeatsDAO {
             if (command != null) {
                 res += command
             }
-            if (pars.size == 0) {
+            if (pars.isEmpty()) {
                 return res
             }
             res = "$res?"
