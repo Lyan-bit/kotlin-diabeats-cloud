@@ -154,7 +154,7 @@ class DiabeatsDAO {
              if (obj == null) {
                  return null
             }
-            try {
+            try { 
                 val map = obj as HashMap<String, Object>
                 val id: String = map["id"].toString()
                 var diabeatsx: Diabeats? = Diabeats.DiabeatsIndex[id]
