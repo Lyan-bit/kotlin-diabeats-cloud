@@ -12,10 +12,14 @@ package com.example.diabeats; // Place in the relevant package directory of your
 /* OCL library for Java version 8+ */
 
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Ocl {
+ 
+ private Ocl() {
+        // Private constructor to prevent instantiation
+ }
+ 
  public static List<String> tokeniseCSV(String line)  {
    // Assumes the separator is a comma
    StringBuilder buff = new StringBuilder();
