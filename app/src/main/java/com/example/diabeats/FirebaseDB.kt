@@ -55,7 +55,7 @@ class FirebaseDB() {
 
     fun persistDiabeats(ex: Diabeats) {
         val evo = DiabeatsVO(ex)
-        val key = evo.getId()
+        val key = evo.id
         if (database == null) {
             return
         }
