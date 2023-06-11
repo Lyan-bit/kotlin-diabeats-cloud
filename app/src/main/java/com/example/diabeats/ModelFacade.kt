@@ -36,20 +36,20 @@ class ModelFacade private constructor(context: Context) {
 	 }
 				    
 	fun editDiabeats(x: DiabeatsVO) {
-		     var obj = getDiabeatsByPK(x.getId())
+		     var obj = getDiabeatsByPK(x.id)
 		     if (obj == null) {
-		         obj = Diabeats.createByPKDiabeats(x.getId())
+		         obj = Diabeats.createByPKDiabeats(x.id)
 			 }
-		  obj.id = x.getId()
-		  obj.pregnancies = x.getPregnancies()
-		  obj.glucose = x.getGlucose()
-		  obj.bloodPressure = x.getBloodPressure()
-		  obj.skinThickness = x.getSkinThickness()
-		  obj.insulin = x.getInsulin()
-		  obj.bmi = x.getBmi()
-		  obj.diabetesPedigreeFunction = x.getDiabetesPedigreeFunction()
-		  obj.age = x.getAge()
-		  obj.outcome = x.getOutcome()
+		  obj.id = x.id
+		  obj.pregnancies = x.pregnancies
+		  obj.glucose = x.glucose
+		  obj.bloodPressure = x.bloodPressure
+		  obj.skinThickness = x.skinThickness
+		  obj.insulin = x.insulin
+		  obj.bmi = x.bmi
+		  obj.diabetesPedigreeFunction = x.diabetesPedigreeFunction
+		  obj.age = x.age
+		  obj.outcome = x.outcome
 			 cdb.persistDiabeats(obj)
 			 currentDiabeats = x
 		
@@ -188,7 +188,7 @@ class ModelFacade private constructor(context: Context) {
     fun allDiabeatsIds(): ArrayList<String> {
         val res: ArrayList<String> = ArrayList()
             for (x in currentDiabeatss.indices) {
-                res.add(currentDiabeatss[x].getId())
+                res.add(currentDiabeatss[x].id)
             }
         return res
     }
