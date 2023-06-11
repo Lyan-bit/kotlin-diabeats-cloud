@@ -25,16 +25,16 @@ class DiabeatsRecyclerViewAdapter (items: List<DiabeatsVO>, listener: ListDiabea
     @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: DiabeatsViewHolder, position: Int) {
         holder.mItem = mValues[position]
-        holder.listDiabeatsIdView.text = " " + mValues[position].getId() + " "
-        holder.listDiabeatsPregnanciesView.text = " " + mValues[position].getPregnancies() + " "
-        holder.listDiabeatsGlucoseView.text = " " + mValues[position].getGlucose() + " "
-        holder.listDiabeatsBloodPressureView.text = " " + mValues[position].getBloodPressure() + " "
-        holder.listDiabeatsSkinThicknessView.text = " " + mValues[position].getSkinThickness() + " "
-        holder.listDiabeatsInsulinView.text = " " + mValues[position].getInsulin() + " "
-        holder.listDiabeatsBmiView.text = " " + mValues[position].getBmi() + " "
-        holder.listDiabeatsDiabetesPedigreeFunctionView.text = " " + mValues[position].getDiabetesPedigreeFunction() + " "
-        holder.listDiabeatsAgeView.text = " " + mValues[position].getAge() + " "
-        holder.listDiabeatsOutcomeView.text = " " + mValues[position].getOutcome() + " "
+        holder.listDiabeatsIdView.text = " " + mValues[position].id + " "
+        holder.listDiabeatsPregnanciesView.text = " " + mValues[position].pregnancies + " "
+        holder.listDiabeatsGlucoseView.text = " " + mValues[position].glucose + " "
+        holder.listDiabeatsBloodPressureView.text = " " + mValues[position].bloodPressure + " "
+        holder.listDiabeatsSkinThicknessView.text = " " + mValues[position].skinThickness + " "
+        holder.listDiabeatsInsulinView.text = " " + mValues[position].insulin + " "
+        holder.listDiabeatsBmiView.text = " " + mValues[position].bmi + " "
+        holder.listDiabeatsDiabetesPedigreeFunctionView.text = " " + mValues[position].diabetesPedigreeFunction + " "
+        holder.listDiabeatsAgeView.text = " " + mValues[position].age + " "
+        holder.listDiabeatsOutcomeView.text = " " + mValues[position].outcome + " "
 
         holder.mView.setOnClickListener { mListener.onListDiabeatsFragmentInteraction(holder.mItem) }
     }
