@@ -42,7 +42,7 @@ class DiabeatsDAO {
           if (line == null) {
               return null
           }
-          val line1vals: ArrayList<String> = Ocl.tokeniseCSV(line)
+          val line1vals: List<String> = Ocl.tokeniseCSV(line)
           var diabeatsx: Diabeats? = Diabeats.DiabeatsIndex[line1vals[0]]
           if (diabeatsx == null) {
               diabeatsx = Diabeats.createByPKDiabeats(line1vals[0])
@@ -91,7 +91,7 @@ class DiabeatsDAO {
           if (lines == null) {
               return result
           }
-          val rows: ArrayList<String> = Ocl.parseCSVtable(lines)
+          val rows: List<String> = Ocl.parseCSVtable(lines)
           for (item in rows.indices) {
               val row = rows[item]
               if (row == null || row.trim { it <= ' ' }.isEmpty()) {
